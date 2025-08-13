@@ -12,7 +12,7 @@ services:
       - 9117:9117
       - 8081:80
     environment:
-      - VPN_SERVICE_PROVIDER=nordvpn
+      - VPN_SERVICE_PROVIDER=${VPN_PROVIDER}
       - VPN_TYPE=openvpn
       - OPENVPN_CONFIG_DIR=/gluetun/openvpn
       - OPENVPN_CONFIG_NAME=custom
