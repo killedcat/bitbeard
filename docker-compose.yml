@@ -59,7 +59,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=America/Chicago
-      - PLEX_CLAIM=${PlexClaim}
+      - PLEX_CLAIM=${PLEX_CLAIM}
     volumes:
       - ./plex:/config
       - ./media:/media
@@ -76,8 +76,6 @@ services:
       - qbittorrent
     environment:
       - TZ=America/Chicago
-      - QBITTORRENT_HOST=${QBITTORRENT_HOST}
-      - QBITTORRENT_PORT=${QBITTORRENT_PORT}
       - QBITTORRENT_USERNAME=${QBITTORRENT_USERNAME}
       - QBITTORRENT_PASSWORD=${QBITTORRENT_PASSWORD}
       - BASE_DOWNLOAD_DIR=${BASE_DOWNLOAD_DIR}
