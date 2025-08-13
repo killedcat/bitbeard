@@ -198,7 +198,7 @@
             <h2>Search Torrents</h2>
             <form id="search-form" autocomplete="off">
                 <label for="search-query">Query:</label>
-                <input type="text" id="search-query" required placeholder="e.g. The Mandalorian S03 1080p">
+                <input type="text" id="search-query" required placeholder="anything your heart desires">
                 <button type="submit">Search</button>
             </form>
             <div class="results" id="search-results"></div>
@@ -236,8 +236,8 @@
         </div>
     </main>
     <script>
-        // --- Set API_BASE to localhost:9870 ---
-        const API_BASE = "http://localhost:9870";
+        // --- API base is injected at build time ---
+        const API_BASE = "__API_BASE__";
 
         // --- Search with pagination and extra info ---
         const RESULTS_PER_PAGE = 10;

@@ -197,3 +197,112 @@
 (N) 2025-08-06T19:35:50 - Saving resume data completed.
 (N) 2025-08-06T19:35:52 - BitTorrent session successfully finished.
 (N) 2025-08-06T19:35:52 - qBittorrent is now ready to exit
+(N) 2025-08-13T11:02:10 - qBittorrent v5.1.2 started. Process ID: 147
+(N) 2025-08-13T11:02:10 - Using config directory: /config/qBittorrent
+(N) 2025-08-13T11:02:10 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2025-08-13T11:02:10 - Peer ID: "-qB5120-"
+(I) 2025-08-13T11:02:10 - HTTP User-Agent: "qBittorrent/5.1.2"
+(I) 2025-08-13T11:02:10 - Distributed Hash Table (DHT) support: ON
+(I) 2025-08-13T11:02:10 - Local Peer Discovery support: ON
+(I) 2025-08-13T11:02:10 - Peer Exchange (PeX) support: ON
+(I) 2025-08-13T11:02:10 - Anonymous mode: OFF
+(I) 2025-08-13T11:02:10 - Encryption support: ON
+(I) 2025-08-13T11:02:10 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2025-08-13T11:02:10 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2025-08-13T11:02:10 - Successfully listening on IP. IP: "10.100.0.2". Port: "TCP/6881"
+(I) 2025-08-13T11:02:10 - Successfully listening on IP. IP: "10.100.0.2". Port: "UTP/6881"
+(I) 2025-08-13T11:02:10 - Successfully listening on IP. IP: "172.18.0.2". Port: "TCP/6881"
+(I) 2025-08-13T11:02:10 - Successfully listening on IP. IP: "172.18.0.2". Port: "UTP/6881"
+(I) 2025-08-13T11:02:10 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2025-08-13T11:02:10 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2025-08-13T11:02:10 - Successfully listening on IP. IP: "fe80::df0c:ea21:74e5:a1e1%tun0". Port: "TCP/6881"
+(I) 2025-08-13T11:02:10 - Successfully listening on IP. IP: "fe80::df0c:ea21:74e5:a1e1%tun0". Port: "UTP/6881"
+(N) 2025-08-13T11:02:10 - Restored torrent. Torrent: "Finding Nemo (2003) 1080p BrRip x264 -YIFY"
+(I) 2025-08-13T11:02:10 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Jul 31 20:25:11 2025.
+(N) 2025-08-13T11:02:10 - Using built-in WebUI.
+(N) 2025-08-13T11:02:10 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-08-13T11:02:10 - WebUI: Now listening on IP: *, port: 8080
+(W) 2025-08-13T11:02:10 - Failed to restore torrent. Files were probably moved or storage isn't accessible. Torrent: "Finding Nemo (2003) 1080p BrRip x264 -YIFY". Reason: "Finding Nemo (2003) [1080p] fast resume rejected. file_stat(/media/Movie/Finding Nemo (2003) [1080p]/Finding.Nemo.2003.1080p.BluRay.x264.YIFY.mp4): mismatching file size"
+(I) 2025-08-13T11:02:10 - Detected external IP. IP: "185.195.59.212"
+(I) 2025-08-13T11:02:14 - Successfully listening on IP. IP: "fe80::5599:1198:a909:219b%tun0". Port: "TCP/6881"
+(I) 2025-08-13T11:02:14 - Successfully listening on IP. IP: "fe80::5599:1198:a909:219b%tun0". Port: "UTP/6881"
+(I) 2025-08-13T11:02:14 - Successfully listening on IP. IP: "10.100.0.2". Port: "TCP/6881"
+(I) 2025-08-13T11:02:14 - Successfully listening on IP. IP: "10.100.0.2". Port: "UTP/6881"
+(I) 2025-08-13T11:02:35 - Successfully listening on IP. IP: "fe80::898f:da27:e6a8:f110%tun0". Port: "TCP/6881"
+(I) 2025-08-13T11:02:35 - Successfully listening on IP. IP: "fe80::898f:da27:e6a8:f110%tun0". Port: "UTP/6881"
+(I) 2025-08-13T11:02:35 - Successfully listening on IP. IP: "10.100.0.2". Port: "TCP/6881"
+(I) 2025-08-13T11:02:35 - Successfully listening on IP. IP: "10.100.0.2". Port: "UTP/6881"
+(W) 2025-08-13T11:02:40 - Couldn't download IP geolocation database file. Reason: The operation was canceled
+(I) 2025-08-13T11:02:56 - Successfully listening on IP. IP: "fe80::892b:55f4:a2ff:e54d%tun0". Port: "TCP/6881"
+(I) 2025-08-13T11:02:56 - Successfully listening on IP. IP: "fe80::892b:55f4:a2ff:e54d%tun0". Port: "UTP/6881"
+(I) 2025-08-13T11:02:56 - Successfully listening on IP. IP: "10.100.0.2". Port: "TCP/6881"
+(I) 2025-08-13T11:02:56 - Successfully listening on IP. IP: "10.100.0.2". Port: "UTP/6881"
+(N) 2025-08-13T11:04:01 - qBittorrent termination initiated
+(N) 2025-08-13T11:04:01 - Saving resume data completed.
+(N) 2025-08-13T11:04:01 - BitTorrent session successfully finished.
+(N) 2025-08-13T11:04:01 - qBittorrent is now ready to exit
+(N) 2025-08-13T11:04:35 - qBittorrent v5.1.2 started. Process ID: 145
+(N) 2025-08-13T11:04:35 - Using config directory: /config/qBittorrent
+(N) 2025-08-13T11:04:35 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2025-08-13T11:04:35 - Peer ID: "-qB5120-"
+(I) 2025-08-13T11:04:35 - HTTP User-Agent: "qBittorrent/5.1.2"
+(I) 2025-08-13T11:04:35 - Distributed Hash Table (DHT) support: ON
+(I) 2025-08-13T11:04:35 - Local Peer Discovery support: ON
+(I) 2025-08-13T11:04:35 - Peer Exchange (PeX) support: ON
+(I) 2025-08-13T11:04:35 - Anonymous mode: OFF
+(I) 2025-08-13T11:04:35 - Encryption support: ON
+(I) 2025-08-13T11:04:35 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2025-08-13T11:04:35 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2025-08-13T11:04:35 - Successfully listening on IP. IP: "172.18.0.2". Port: "TCP/6881"
+(I) 2025-08-13T11:04:35 - Successfully listening on IP. IP: "172.18.0.2". Port: "UTP/6881"
+(I) 2025-08-13T11:04:35 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2025-08-13T11:04:35 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(N) 2025-08-13T11:04:35 - Restored torrent. Torrent: "Finding Nemo (2003) 1080p BrRip x264 -YIFY"
+(I) 2025-08-13T11:04:35 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Jul 31 20:25:11 2025.
+(N) 2025-08-13T11:04:35 - Using built-in WebUI.
+(N) 2025-08-13T11:04:35 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-08-13T11:04:35 - WebUI: Now listening on IP: *, port: 8080
+(W) 2025-08-13T11:04:35 - Failed to restore torrent. Files were probably moved or storage isn't accessible. Torrent: "Finding Nemo (2003) 1080p BrRip x264 -YIFY". Reason: "Finding Nemo (2003) [1080p] fast resume rejected. file_stat(/media/Movie/Finding Nemo (2003) [1080p]/Finding.Nemo.2003.1080p.BluRay.x264.YIFY.mp4): mismatching file size"
+(I) 2025-08-13T11:04:38 - Successfully listening on IP. IP: "fe80::e4cb:5f04:7100:f413%tun0". Port: "TCP/6881"
+(I) 2025-08-13T11:04:38 - Successfully listening on IP. IP: "fe80::e4cb:5f04:7100:f413%tun0". Port: "UTP/6881"
+(I) 2025-08-13T11:04:38 - Successfully listening on IP. IP: "10.100.0.2". Port: "TCP/6881"
+(I) 2025-08-13T11:04:38 - Successfully listening on IP. IP: "10.100.0.2". Port: "UTP/6881"
+(W) 2025-08-13T11:04:40 - Couldn't download IP geolocation database file. Reason: The remote host name was not found (invalid hostname)
+(I) 2025-08-13T11:04:40 - Detected external IP. IP: "92.119.19.237"
+(N) 2025-08-13T11:21:46 - qBittorrent termination initiated
+(N) 2025-08-13T11:21:46 - Saving resume data completed.
+(N) 2025-08-13T11:21:46 - BitTorrent session successfully finished.
+(N) 2025-08-13T11:21:46 - qBittorrent is now ready to exit
+(N) 2025-08-13T11:22:13 - qBittorrent v5.1.2 started. Process ID: 147
+(N) 2025-08-13T11:22:13 - Using config directory: /config/qBittorrent
+(N) 2025-08-13T11:22:13 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2025-08-13T11:22:14 - Peer ID: "-qB5120-"
+(I) 2025-08-13T11:22:14 - HTTP User-Agent: "qBittorrent/5.1.2"
+(I) 2025-08-13T11:22:14 - Distributed Hash Table (DHT) support: ON
+(I) 2025-08-13T11:22:14 - Local Peer Discovery support: ON
+(I) 2025-08-13T11:22:14 - Peer Exchange (PeX) support: ON
+(I) 2025-08-13T11:22:14 - Anonymous mode: OFF
+(I) 2025-08-13T11:22:14 - Encryption support: ON
+(I) 2025-08-13T11:22:14 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2025-08-13T11:22:14 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2025-08-13T11:22:14 - Successfully listening on IP. IP: "10.100.0.2". Port: "TCP/6881"
+(I) 2025-08-13T11:22:14 - Successfully listening on IP. IP: "10.100.0.2". Port: "UTP/6881"
+(I) 2025-08-13T11:22:14 - Successfully listening on IP. IP: "172.18.0.3". Port: "TCP/6881"
+(I) 2025-08-13T11:22:14 - Successfully listening on IP. IP: "172.18.0.3". Port: "UTP/6881"
+(I) 2025-08-13T11:22:14 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2025-08-13T11:22:14 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2025-08-13T11:22:14 - Successfully listening on IP. IP: "fe80::e55:a83c:eee9:4f87%tun0". Port: "TCP/6881"
+(I) 2025-08-13T11:22:14 - Successfully listening on IP. IP: "fe80::e55:a83c:eee9:4f87%tun0". Port: "UTP/6881"
+(N) 2025-08-13T11:22:14 - Restored torrent. Torrent: "Finding Nemo (2003) 1080p BrRip x264 -YIFY"
+(I) 2025-08-13T11:22:14 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Jul 31 20:25:11 2025.
+(N) 2025-08-13T11:22:14 - Using built-in WebUI.
+(N) 2025-08-13T11:22:14 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-08-13T11:22:14 - WebUI: Now listening on IP: *, port: 8080
+(W) 2025-08-13T11:22:14 - Failed to restore torrent. Files were probably moved or storage isn't accessible. Torrent: "Finding Nemo (2003) 1080p BrRip x264 -YIFY". Reason: "Finding Nemo (2003) [1080p] fast resume rejected. file_stat(/media/Movie/Finding Nemo (2003) [1080p]/Finding.Nemo.2003.1080p.BluRay.x264.YIFY.mp4): mismatching file size"
+(I) 2025-08-13T11:22:15 - Detected external IP. IP: "193.142.201.200"
+(N) 2025-08-13T12:25:42 - Added new torrent. Torrent: "Shang-Chi and the Legend of the Ten Rings (2021) [1080p] [BluRay"
+(N) 2025-08-13T12:33:25 - Torrent download finished. Torrent: "Shang-Chi and the Legend of the Ten Rings (2021) [1080p] [BluRay"
+(N) 2025-08-13T12:33:28 - Torrent removed. Torrent: "Shang-Chi and the Legend of the Ten Rings (2021) [1080p] [BluRay"
+(N) 2025-08-13T14:08:13 - Added new torrent. Torrent: "The Priory of the Orange Tree - Samantha Shannon"
+(N) 2025-08-13T14:14:23 - Torrent download finished. Torrent: "The Priory of the Orange Tree - Samantha Shannon"
+(N) 2025-08-13T14:14:28 - Torrent removed. Torrent: "The Priory of the Orange Tree - Samantha Shannon"

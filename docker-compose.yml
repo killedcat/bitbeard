@@ -93,4 +93,5 @@ services:
     environment:
       - USERNAME=${WEBUI_USER}
       - PASSWORD=${WEBUI_PASSWORD}
+      - API_BASE=${API_BASE}
     restart: unless-stopped
