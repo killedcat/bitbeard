@@ -1,0 +1,6 @@
+discord.py
+qbittorrent-api
+uvicorn
+fastapi
+requests
+pydantic

@@ -1,0 +1,98 @@
+version: '3.8'
+
+services:
+  gluetun:
+    image: qmcgaw/gluetun
+    container_name: gluetun
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 8080:8080
+      - 9870:9870
+      - 9117:9117
+      - 8081:80
+    environment:
+      - VPN_SERVICE_PROVIDER=nordvpn
+      - VPN_TYPE=openvpn
+      - OPENVPN_CONFIG_DIR=/gluetun/openvpn
+      - OPENVPN_CONFIG_NAME=custom
+      - OPENVPN_USER=${OPENVPN_USER}
+      - OPENVPN_PASSWORD=${OPENVPN_PASSWORD}
+      - TZ=America/Chicago
+    volumes:
+      - ./openvpn:/gluetun/openvpn
+    restart: unless-stopped
+
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    depends_on:
+      - gluetun
+    network_mode: "service:gluetun"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+      - WEBUI_PORT=8080
+    volumes:
+      - ./qbittorrent:/config
+      - ./media:/media
+    restart: unless-stopped
+
+  jackett:
+    image: linuxserver/jackett
+    container_name: jackett
+    network_mode: "service:gluetun"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+    volumes:
+      - ./jackett:/config
+      - ./media:/media
+    restart: unless-stopped
+
+  plex:
+    image: linuxserver/plex
+    container_name: plex
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+      - PLEX_CLAIM=${PlexClaim}
+    volumes:
+      - ./plex:/config
+      - ./media:/media
+    ports:
+      - 32400:32400
+    restart: unless-stopped
+
+  bitbeard:
+    build: ./bitbeard
+    container_name: bitbeard
+    network_mode: "service:gluetun"
+    depends_on:
+      - jackett
+      - qbittorrent
+    environment:
+      - TZ=America/Chicago
+      - QBITTORRENT_HOST=${QBITTORRENT_HOST}
+      - QBITTORRENT_PORT=${QBITTORRENT_PORT}
+      - QBITTORRENT_USERNAME=${QBITTORRENT_USERNAME}
+      - QBITTORRENT_PASSWORD=${QBITTORRENT_PASSWORD}
+      - BASE_DOWNLOAD_DIR=${BASE_DOWNLOAD_DIR}
+      - DISCORD_ANNOUNCE_CHANNEL_ID=${DISCORD_ANNOUNCE_CHANNEL_ID}
+      - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
+      - JACKETT_API_KEY=${JACKETT_API_KEY}
+    volumes:
+      - ./bitbeard:/app
+    restart: unless-stopped
+
+  webui:
+    build: ./webui
+    container_name: webui
+    network_mode: "service:gluetun"
+    environment:
+      - USERNAME=${WEBUI_USER}
+      - PASSWORD=${WEBUI_PASSWORD}
+    restart: unless-stopped
