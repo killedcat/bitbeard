@@ -4,4 +4,5 @@
 *.log
 bitbeard/*.log
 **/.htpasswd
-jackett/Jackett/log.txt
+/jackett
+/qbittorrent
