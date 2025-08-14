@@ -21,7 +21,7 @@ Bitbeard is a Discord bot that integrates with qBittorrent, Jackett, and Plex fo
 
 ## Security Warnings
 
-**Bitbeard has some config defaults for jackett and qbittorrent. He's got defaults that can be exploited if you port forward for remote management.**
+**Bitbeard has some config defaults for jackett and qbittorrent. They can be exploited if you port forward for remote management.**
 
 - **qBittorrent**: If you expose port 8080 externally, **change the default password**.
 - **Jackett**: If you expose port 9117 externally, **change the API key**.
