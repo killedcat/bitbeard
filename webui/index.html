@@ -236,8 +236,8 @@
         </div>
     </main>
     <script>
-        // --- API base is injected at build time ---
-        const API_BASE = "__API_BASE__";
+        // --- API base is fixed to same-origin reverse proxy ---
+        const API_BASE = "/api";
 
         // --- Search with pagination and extra info ---
         const RESULTS_PER_PAGE = 10;
