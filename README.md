@@ -1,6 +1,6 @@
 # Bitbeard
 
-Bitbeard is a Discord bot that integrates with qBittorrent, Jackett, and Plex for automated media management.
+Bitbeard is a Discord bot that integrates with qBittorrent, Jackett, and Plex for automated media management. WebUI is hosted at localhost:8081 by default.
 
 ## Quick Setup
 
