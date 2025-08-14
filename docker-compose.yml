@@ -8,9 +8,8 @@ services:
       - NET_ADMIN
     ports:
       - 8080:8080
-      - 9870:9870
       - 9117:9117
-      - 8081:80
+      - 80:80
     environment:
       - VPN_SERVICE_PROVIDER=${VPN_PROVIDER}
       - VPN_TYPE=openvpn
@@ -117,7 +116,6 @@ services:
     container_name: webui
     network_mode: "service:gluetun"
     environment:
-      - USERNAME=${WEBUI_USER}
-      - PASSWORD=${WEBUI_PASSWORD}
-      - API_BASE=${API_BASE}
+      USERNAME: ${WEBUI_USER}
+      PASSWORD: ${WEBUI_PASSWORD}
     restart: unless-stopped
