@@ -30,7 +30,7 @@ services:
       sh -c '
       set -e
       mkdir -p /dest/jackett /dest/qbt
-      cp -an /defaults/jackett/. /dest/jackett/
+      cp -an /defaults/jackett/. /dest/jackett
       cp -an /defaults/qbt/. /dest/qbt/
       chown -R 1000:1000 /dest/jackett /dest/qbt
       '
