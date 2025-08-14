@@ -9,7 +9,7 @@ services:
     ports:
       - 8080:8080
       - 9117:9117
-      - 80:80
+      - 8081:80
     environment:
       - VPN_SERVICE_PROVIDER=${VPN_PROVIDER}
       - VPN_TYPE=openvpn
@@ -27,10 +27,24 @@ services:
     container_name: init-configs
     command: |
       sh -c '
-      set -e
-      mkdir -p /dest/jackett /dest/qbt
-      cp -an /defaults/jackett/. /dest/jackett
-      cp -an /defaults/qbt/. /dest/qbt/
+      set -ex
+      echo "Defaults tree:"; ls -la /defaults; ls -laR /defaults/jackett || true; ls -laR /defaults/qbt || true
+      echo "Before copy - dest tree:"; ls -la /dest || true; ls -laR /dest/jackett || true; ls -laR /dest/qbt || true
+      mkdir -p /dest/jackett/Jackett /dest/qbt/qBittorrent
+      apk add --no-cache coreutils >/dev/null 2>&1 || true
+      if [ ! -e /dest/jackett/Jackett/ServerConfig.json ]; then
+        echo "Seeding Jackett defaults..."
+        cp -av /defaults/jackett/Jackett/. /dest/jackett/Jackett/
+      else
+        echo "Jackett config exists, skipping seed"
+      fi
+      if [ ! -e /dest/qbt/qBittorrent/qBittorrent.conf ]; then
+        echo "Seeding qBittorrent defaults..."
+        cp -av /defaults/qbt/qBittorrent/. /dest/qbt/qBittorrent/
+      else
+        echo "qBittorrent config exists, skipping seed"
+      fi
+      echo "After copy - dest tree:"; ls -la /dest; ls -laR /dest/jackett || true; ls -laR /dest/qbt || true
       chown -R 1000:1000 /dest/jackett /dest/qbt
       '
     volumes:
